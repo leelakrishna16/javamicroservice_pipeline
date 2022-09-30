@@ -1,8 +1,10 @@
 pipeline {
-  agent any
-  stages {
-    stage ("Build") {
-      sh 'echo "Maven Build Started" '
+    agent any
+    stages { 
+        stage('Example') {
+            steps {
+                echo 'Hello World'
+            }
+        }
     }
-  } 
 }
