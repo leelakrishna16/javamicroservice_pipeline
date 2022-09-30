@@ -9,8 +9,9 @@ pipeline {
       sh 'echo "sonar analysis is started and completed"'
     }
     {
-      stage ("Nexus upload"){
+     stage ("Nexus upload"){
        sh 'echo "Nexus upload is started and completed'
       }  
   }
+}
 }
